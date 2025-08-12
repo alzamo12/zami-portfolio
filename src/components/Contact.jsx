@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -18,62 +19,95 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent successfully!");
+          toast.success("Message sent successfully!");
         },
         (error) => {
           console.log(error.text);
-          alert("Something went wrong. Please try again.");
+          toast.error("Something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div id="contact" className="min-h-screen bg-base-200 py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-10">Contact Me</h2>
+    <div
+      id="contact"
+      className=" rounded-2xl"
+    >
+      <h2 className="text-3xl lg:text-4xl mb-6 font-bold text-center text-gray-800">
+        Contact Me
+      </h2>
 
-      <div className="flex flex-col lg:flex-row gap-10 justify-center items-start max-w-6xl mx-auto">
-
+      <div className="flex flex-col lg:flex-row-reverse gap-10 justify-between items-stretch  w-full mx-auto">
         {/* Contact Info */}
-        <div className="bg-base-100 shadow-xl p-6 rounded-xl w-full lg:w-1/2">
-          <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-          <p className="mb-2"><strong>Email:</strong> your.email@example.com</p>
-          <p className="mb-2"><strong>Phone:</strong> +123 456 7890</p>
-          <p className="mb-2"><strong>WhatsApp:</strong> +123 456 7890</p>
+        <div className="bg-cyan-50 shadow-lg hover:shadow-xl 
+        transition-all p-8 rounded-2xl w-full 
+        lg:w-1/2 flex flex-col 
+        justify-center ">
+          <div className="">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+              Get in Touch
+            </h3>
+            <div className="divider"></div>
+            <p className="mb-3 text-gray-600">
+              <strong className="text-gray-800">Email:</strong> rafiqulislam4969@gmail.com
+            </p>
+            <div className="divider"></div>
+
+            <p className="mb-3 text-gray-600">
+              <strong className="text-gray-800">Phone:</strong> +880-1790605599
+            </p>
+            <div className="divider"></div>
+
+            <p className="mb-3 text-gray-600">
+              <strong className="text-gray-800">WhatsApp:</strong> +880-1790605599
+            </p>
+            <div className="divider"></div>
+
+          </div>
         </div>
 
         {/* Contact Form */}
-        <div className="bg-base-100 shadow-xl p-6 rounded-xl w-full lg:w-1/2">
-          <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+        <div className="bg-cyan-50 shadow-lg hover:shadow-xl transition-all p-8 rounded-2xl w-full lg:w-1/2">
+          <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+            Send a Message
+          </h3>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-5"
+          >
             <input
               type="text"
               name="user_name"
               placeholder="Your Name"
-              className="input input-bordered w-full"
+              className="input input-bordered w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200"
               required
             />
             <input
               type="email"
               name="user_email"
               placeholder="Your Email"
-              className="input input-bordered w-full"
+              className="input input-bordered w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200"
               required
             />
             <textarea
               name="message"
               placeholder="Your Message"
-              className="textarea textarea-bordered w-full"
+              className="textarea textarea-bordered w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200"
               rows="5"
               required
             ></textarea>
-            <button type="submit" className="btn btn-primary w-full">
-              Send
+            <button
+              type="submit"
+              className="btn bg-cyan-100 border-none text-black font-semibold rounded-lg w-full transition-all duration-300"
+            >
+              Send Message
             </button>
           </form>
         </div>
-
       </div>
     </div>
+
   );
 };
 

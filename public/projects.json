@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Richter Restaurant",
+    "image": "https://i.ibb.co.com/V0cWKqK1/Screenshot-170.png",
+    "description": "A restaurant management and online ordering platform with a modern interface.",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase"
+    ],
+    "github": "https://github.com/alzamo12/richter-restaurant-client",
+    "live_link": "https://richter-restaurant.web.app",
+    "challenges": [
+      "Implementing real-time menu updates without page reload",
+      "Implementing Pagination",
+      "Implementing admin-user Dashboard",
+      "Integrating secure payment gateway"
+    ],
+    "futurePlans": [
+      "Showing proper stats on Admin Dashboard",
+      "Add Manage Bookings Page for admin",
+      "Add Proper food tracking parcel delivery",
+      "Make the website more user friendly and responsive"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "CO2BD",
+    "image": "https://i.ibb.co.com/Sw7xyqbm/Screenshot-149.png",
+    "description": "A social development event booking platform designed to inspire and connect communities.",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase"
+    ],
+    "github": "https://github.com/alzamo12/co2bd-client",
+    "live_link": "https://co2bd-d6f4f.web.app",
+    "challenges": [
+      "Implementing notification system",
+      "Ensure Responsive design for all devices",
+      "Implementing multi-step form "
+    ],
+    "futurePlans": [
+      "Implement proper User and Admin Dashboard",
+      "Show stats to user and admin",
+      "Implementing add Announcement features for admin",
+      "Implementing following system"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Disco Zone",
+    "image": "https://i.ibb.co.com/sp9PFLmT/Screenshot-151.png",
+    "description": "A Forum platform designed to help people find each others opinion and interest",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Firebase"
+    ],
+    "github": "https://github.com/alzamo12/disco-zone-client",
+    "live_link": "https://disco-zone.web.app",
+    "challenges": [
+      "Implementing animation using Framer-motion",
+      "Admin-User role and separated dashboard",
+      "Show Admin and User Announcement Page"
+    ],
+    "futurePlans": [
+      "Add Proper notification system for post like and comment",
+      "Add more meaningful and user friendly pages and section for better experience",
+      "Implementing following system"
+    ]
+  }
+]
