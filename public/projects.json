@@ -64,7 +64,8 @@
       "Tailwind CSS",
       "Node.js",
       "Express.js",
-      "Firebase"
+      "Firebase",
+      "MongoDB"
     ],
     "github": "https://github.com/alzamo12/disco-zone-client",
     "live_link": "https://disco-zone.web.app",
@@ -77,6 +78,36 @@
       "Add Proper notification system for post like and comment",
       "Add more meaningful and user friendly pages and section for better experience",
       "Implementing following system"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Focus Hub",
+    "image": "https://ibb.co.com/pBC8X7Zm",
+    "description": "An Edu-tech platform to help students studying more efficiently through AI and solve each other's problems",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "MongoDB",
+      "Gemini AI Integration",
+      "React Quill"
+    ],
+    "github": "https://github.com/alzamo12/focusHub",
+    "live_link": "https://focus-hub-63922.firebaseapp.com/",
+    "challenges": [
+      "Implementing Note creation and AI note generation focusing on regional education system",
+      "AI Page/Topic Summarization",
+      "AI Question generator focusing on Regional Education System",
+      "Forum system to any problem that user can face while studying"
+    ],
+    "futurePlans": [
+      "Add Proper notification system for post like and comment",
+      "Add more meaningful and user friendly pages and section for better experience",
+      "Implementing following system",
+      "In Forum feature add points on answering the write answer"
     ]
   }
 ]
